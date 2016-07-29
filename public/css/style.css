@@ -1,0 +1,136 @@
+/* reset */
+body,html{width:100%;height:100%;}
+* {padding:0;margin:0;border:none;font-family:'Noto Sans',sans-serif;font-size: 14px;color:#000}
+ul, li{list-style:none}
+a:hover,a:focus,a:link,a:visited {text-decoration:none}
+button, input, .btn, .btn_made,.ir,select,.ico,img{vertical-align:middle;background:none;border:0}
+em,th{font-style:normal}
+table{border-spacing:0;border-collapse:collapse}
+input,.btn,.ico,button{vertical-align:middle}
+
+/*header*/
+header {background: rgb(224, 224, 224);}
+header div {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+header div:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+header h1 {float: left;}
+header h1 span {
+	color: rgb(52, 152, 219);
+}
+header .globalNav {
+	float: right;
+}
+header .globalNav li {display: inline}
+header .globalNav select {background: #fff;}
+header nav {
+	background: rgb(231, 76, 60);
+}
+header nav ul {text-align: center;}
+header nav li {display: inline;}
+header nav a {
+	display: inline-block;
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 16px;
+}
+
+/*section*/
+section {
+	width: 1200px;
+	margin: 20px auto;
+}
+section:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+.leftWrap {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.leftWrap .userInfo .img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 10px;
+	background-size: 100% !important;
+	border-radius: 50px;
+}
+.leftWrap .userInfo a {
+	display: block;
+	margin-top: 20px;
+}
+.leftWrap .userName {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.leftWrap .userName span {display: block}
+.rightWrap {
+	float: right;
+	width: 900px;
+}
+.btn {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(52, 152, 219);
+}
+.db,
+.plannerList span {display: block;}
+.plannerList svg {height: 45px;}
+.plannerList > li {
+	height: 70px;
+	margin-bottom: 20px;
+}
+.plannerList li:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.plannerList h2 {
+	float: left;
+	width: 200px;
+	text-align: center;
+}
+.plannerList p {
+	float: left;
+	line-height: 70px;
+}
+.plannerList a {float: right;}
+
+
+/*footer*/
+footer {
+	border-top: 2px solid #ccc;
+	font-size: 12px;
+}
+footer ul {
+	margin: 10px auto;
+	text-align: center
+}
+footer li {
+	display: inline;
+}
+footer li a {
+	display: inline-block;
+	padding: 10px 60px;
+}
+footer address {
+	width: 1200px;
+	margin: 0 auto;
+	color: #666;
+	font-style: normal;
+}
