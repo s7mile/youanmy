@@ -26,7 +26,10 @@ header h1 span {
 header .globalNav {
 	float: right;
 }
-header .globalNav li {display: inline}
+header .globalNav li {
+	display: inline;
+	margin-left: 20px;
+}
 header .globalNav select {background: #fff;}
 header nav {
 	background: rgb(231, 76, 60);
@@ -111,6 +114,7 @@ section:after {
 .plannerList a {float: right;}
 
 /*signup*/
+section#reset_password,
 section#login, 
 section#signup {
 	width: 570px;
@@ -138,15 +142,18 @@ section#signup > p {
 	font-size: 25px;
 	text-align: center
 }
+section#reset_password form, 
 section#login form, 
 section#signup form {
 	padding: 20px;
 	margin: 20px auto 0;
 	border-top: 1px solid #ccc;
 }
+section#reset_password form, 
 section#login form {
 	width: 422px;
 }
+section#reset_password form > p, 
 section#login form > p, 
 section#signup form > p {
 	width: 400px;
@@ -159,11 +166,13 @@ section#signup form > p {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 	font-size: 14px;
 }
+section#reset_password form > p input, 
 section#login form > p input, 
 section#signup form > p input {
 	width: 350px;
 	height: 35px;
 	line-height: 40px;
+	text-align: left !important;
 }
 section#login svg, 
 section#signup svg {
@@ -182,12 +191,12 @@ section#signup .cont {
 	overflow: hidden;
 	overflow-y: scroll;
 	height: 180px;
-    padding: 6px 12px;
-    margin-top: 2px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    font-size: 14px;
+	padding: 6px 12px;
+	margin-top: 2px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	font-size: 14px;
 }
 section#signup input.btn {
 	width: 100%;
@@ -209,6 +218,19 @@ section#login input[type="submit"] {
 	background-color: rgb(155, 89, 182);
 }
 section#login .findidpw {float: right;}
+
+section#reset_password {text-align: center;}
+section#reset_password svg {
+	width: 64px;
+	height: 64px;
+}
+section#reset_password > p {
+	margin: 20px 0;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+section#reset_password .btn {width: 100%;}
 
 
 /*footer*/
