@@ -114,6 +114,7 @@ section:after {
 .plannerList a {float: right;}
 
 /*signup*/
+section#signup_welcome, 
 section#reset_password,
 section#login, 
 section#signup {
@@ -231,6 +232,39 @@ section#reset_password > p {
 	font-weight: bold;
 }
 section#reset_password .btn {width: 100%;}
+
+section#signup_welcome {text-align: center}
+section#signup_welcome strong {
+	font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    color: rgb(52, 152, 219);
+}
+section#signup_welcome p span, 
+section#signup_welcome p {
+	font-size: 18px;
+	font-weight: bold
+}
+section#signup_welcome > p {margin-bottom: 50px;}
+
+section#signup_welcome p.heading span, 
+section#signup_welcome p.heading {
+	font-size: 24px;
+}
+section#signup_welcome span.user {color: rgb(155, 89, 182);}
+section#signup_welcome span.email {color: rgb(230, 126, 34);}
+section#signup_welcome div {
+	width: 260px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 4px;
+    background-color: rgb(237, 237, 237);
+}
+section#signup_welcome div .btn {
+	width: 128px;
+	margin-top: 20px;
+}
+section#signup_welcome div .main_btn {background: rgb(155, 89, 182)}
 
 
 /*footer*/
