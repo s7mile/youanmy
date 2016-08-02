@@ -111,6 +111,7 @@ section:after {
 .plannerList a {float: right;}
 
 /*signup*/
+section#login, 
 section#signup {
 	width: 570px;
 	padding: 30px 12px;
@@ -121,28 +122,36 @@ section#signup {
 	box-sizing: border-box;
 	font-size: 14px;
 }
+section#login h2, 
 section#signup h2 {
 	color: rgb(231, 76, 60);
 	font-size: 30px;
 	text-align: center
 }
+section#login h2 span, 
 section#signup h2 span {
 	color: rgb(241, 196, 15);
 	font-size: 30px;
 }
+section#login > p, 
 section#signup > p {
 	font-size: 25px;
 	text-align: center
 }
+section#login form, 
 section#signup form {
 	padding: 20px;
 	margin: 20px auto 0;
 	border-top: 1px solid #ccc;
 }
+section#login form {
+	width: 422px;
+}
+section#login form > p, 
 section#signup form > p {
 	width: 400px;
 	height: 40px;
-	padding: 0 10px;
+	padding: 5px 10px 0;
 	margin: 0 auto 10px;
 	background: #fff;
 	border: 1px solid #ccc;
@@ -150,11 +159,13 @@ section#signup form > p {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 	font-size: 14px;
 }
+section#login form > p input, 
 section#signup form > p input {
 	width: 350px;
-	height: 40px;
+	height: 35px;
 	line-height: 40px;
 }
+section#login svg, 
 section#signup svg {
 	width: 27px;
 	height: 31px;
@@ -188,6 +199,16 @@ section#signup span.alert {
 	text-align: right;
 }
 section#signup input[type="submit"]{margin-top: 30px;}
+section#login .btn {
+	width: 100%;
+	margin-top: 10px;
+	background-color: rgb(243, 156, 18);
+}
+section#login input[type="submit"] {
+	width: 100%;
+	background-color: rgb(155, 89, 182);
+}
+section#login .findidpw {float: right;}
 
 
 /*footer*/

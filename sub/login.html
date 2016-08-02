@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>유안마이</title>
+	<link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+	<header>
+		<div>
+			<h1>
+				<a href="/"><span>遊 安 买</span>You&My</a>
+			</h1>
+			<ul class="globalNav">
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">로그아웃</a></li>
+				<li>
+					<select name="language" id="language">
+						<option value="korean">한국어</option>
+						<option value="english">English</option>
+						<option value="china">汉语</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section id="login">
+		<h2>遊安买<span>You An My</span></h2>
+		<p>유안마이에 오신 것을 환영합니다.</p>
+		<form action="" method="post">
+			<p>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32" fill="#000000" data-svg-content="true"><g><path d="M 30,8L 2,8 C 0.896,8,0,8.896,0,10l0,20 c0,1.104, 0.896,2, 2,2l 28,0 c 1.104,0, 2-0.896, 2-2L 32,10 C 32,8.896, 31.104,8, 30,8z M 11.36,22.054l 4.644,3.156l 4.616-3.178L 28.586,30L 3.414,30 L 11.36,22.054z M 2,28.586L 2,15.69 l 7.676,5.218L 2,28.586z M 22.294,20.88 L 30,15.576l0,13.010 L 22.294,20.88z M 30,10l0,3.236 l-0.042-0.060l-13.962,9.614L 2,13.274L 2,10 L 30,10 z"></path></g></svg>
+				<input type="text" name="user_email" id="user_email" title="이메일을 입력해주세요." placeholder="이메일">
+			</p>
+			<p>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32" fill="#000000" data-svg-content="true"><g><path d="M 16,0C 10.478,0, 6,4.546, 6,10.154L 6,12 L 4,12 C 2.896,12, 2,12.896, 2,14l0,16 c0,1.104, 0.896,2, 2,2l 24,0 c 1.104,0, 2-0.896, 2-2L 30,14 c0-1.104-0.896-2-2-2l-2,0 L 26,10.154 C 26,4.546, 21.522,0, 16,0z M 8,10.154C 8,5.658, 11.588,2, 16,2s 8,3.658, 8,8.154L 24,12 L 8,12 L 8,10.154 z M 28,30L 4,30 L 4,14 l 24,0 L 28,30 z M 20,22c0-2.21-1.79-4-4-4s-4,1.79-4,4s 1.79,4, 4,4S 20,24.21, 20,22z M 16,24c-1.102,0-2-0.898-2-2 s 0.898-2, 2-2s 2,0.898, 2,2S 17.102,24, 16,24z"></path></g></svg>
+				<input type="password" name="user_password" id="user_password" title="비밀번호를 입력해주세요." placeholder="비밀번호">
+			</p>
+			<input type="checkbox" name="autologin" id="autologin">
+			<label for="autologin">로그인 상태 유지</label>
+			<a href="#" class="findidpw">아이디/비밀번호 찾기</a>
+			<input type="submit" class="btn" value="로그인">
+			<a href="#" class="btn">이메일 주소로 회원가입</a>
+		</form>
+	</section>
+</body>
+</html>
