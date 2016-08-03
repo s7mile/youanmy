@@ -267,7 +267,7 @@ section#signup_welcome div .btn {
 section#signup_welcome div .main_btn {background: rgb(155, 89, 182)}
 
 
-section#qna > p {
+.noti {
 	padding: 10px 0;
 	border-bottom: 1px solid #ccc;
 	font-weight: bold;
