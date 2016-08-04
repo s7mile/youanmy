@@ -375,6 +375,54 @@ section#trip_add .btn {
 	height: 100px;
 }
 
+section#bid_list > ul > li {
+	margin-bottom: 80px;
+}
+section#bid_list > ul > li:after {
+	content: "";
+	clear: both;
+	display: block;	
+}
+section#bid_list .user {
+	float: left;
+	width: 200px;
+	text-align: center;
+}
+section#bid_list .cont {float: left;}
+section#bid_list .userImg {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 10px;
+	background: #eee;
+	border-radius: 100px;
+}
+section#bid_list .user span {display: block;}
+section#bid_list .state li {
+	display: inline-block;
+	width: 70px;
+	padding: 8px;
+	border-radius: 4px;
+	background: #aaa;
+	color: #fff;
+	text-align: center;
+}
+section#bid_list .state li.active {background: rgb(52, 152, 219);}
+section#bid_list .price, 
+section#bid_list .info {
+	margin: 5px;
+}
+section#bid_list .price p, 
+section#bid_list .info p {
+	display: inline-block;
+	width: 200px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+}
+section#bid_list .price p {width: 310px;} 
+section#bid_list .btn {width: 100%;} 
+
 /*footer*/
 footer {
 	margin-top: 100px;
