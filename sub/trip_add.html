@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>유안마이</title>
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script>
+	$(function(){
+		$( ".datePick" ).datepicker();
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>
+				<a href="/"><span>遊 安 买</span>You&My</a>
+			</h1>
+			<ul class="globalNav">
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">로그아웃</a></li>
+				<li>
+					<select name="language" id="language">
+						<option value="korean">한국어</option>
+						<option value="english">English</option>
+						<option value="china">汉语</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">계정설정</a></li>
+				<li><a href="#">일정관리</a></li>
+				<li><a href="#">입찰관리</a></li>
+				<li><a href="#">여행상품관리</a></li>
+				<li><a href="#">정산관리</a></li>
+				<li><a href="#">질문과답변</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="trip_add">
+		<h2 class="noti">여행 상품 만들기</h2>
+		<form action="" method="post">
+			<p>
+				<input type="text" name="title" id="title" placeholder="여행 이름을 지어주세요">
+			</p>
+			<p>
+				<input type="text" name="startDate" id="startDate" class="datePick" placeholder="시작일">
+				<input type="text" name="endDate" id="endDate" class="datePick" placeholder="도착일">
+				<input type="text" name="period" id="period" placeholder="여행일수">
+			</p>
+			<p>
+				<select name="peopleCount" id="peopleCount">
+					<option value="">여행객수</option>
+				</select>
+
+				<select name="peopleType" id="peopleType">
+					<option value="">가족</option>
+					<option value="">친구</option>
+					<option value="">애인</option>
+					<option value="">부부</option>
+					<option value="">회사</option>
+					<option value="">단체</option>
+				</select>
+
+				<select name="tripType" id="tripType">
+					<option value="">자유여행</option>
+					<option value="">단체여행</option>
+					<option value="">개인여행</option>
+					<option value="">비즈니스여행</option>
+					<option value="">뷰티여행</option>
+					<option value="">먹방여행</option>
+					<option value="">의료여행</option>
+				</select>
+			</p>
+			<p>
+				<select name="tripAfter" id="tripAfter">
+					<option value="">여행 전</option>
+					<option value="">여행 후</option>
+				</select>
+
+				<select name="public" id="public">
+					<option value="">공개</option>
+					<option value="">비공개</option>
+				</select>
+			</p>
+			<p>
+				<input type="submit" value="여행 일정 만들기" class="btn">
+			</p>
+		</form>
+
+		<form action="" method="post" id="makeCourse">
+			<h3>여행코스 만들기</h3>
+			<div>
+				<p>
+					<input type="radio" name="type" id="type1" value="1"> <label for="type1">관광</label>
+					<input type="radio" name="type" id="type2" value="2"> <label for="type2">숙박</label>
+					<input type="radio" name="type" id="type3" value="3"> <label for="type3">교통</label>
+					<input type="radio" name="type" id="type4" value="4"> <label for="type4">음식점</label>
+					<input type="radio" name="type" id="type5" value="5"> <label for="type5">쇼핑</label>
+					<input type="radio" name="type" id="type6" value="6"> <label for="type6">오락</label>
+					<input type="radio" name="type" id="type7" value="7"> <label for="type7">액티비티</label>
+					<input type="radio" name="type" id="type8" value="8"> <label for="type8">전체</label>
+				</p>
+
+				<select name="city" id="city">
+					<option value="">인천</option>
+				</select>
+				<span>인천국제공항</span>
+				<input type="text" name="tag" id="tag" placeholder="#위치태그를 입력해주세요">
+			</div>
+			<input type="file" name="img" id="img1" style="display:none;">
+			<label for="img1" class="img">사진</label>
+			<textarea name="review" id="review" cols="30" rows="10" placeholder="여행후기 작성"></textarea>
+
+			<input type="button" value="추가하기" class="btn">
+			<input type="submit" value="저장하기" class="btn">
+		</form>
+	</section>
+	<footer>
+		<ul>
+			<li><a href="#">서비스소개</a></li>
+			<li><a href="#">고객센터</a></li>
+			<li><a href="#">제휴문의</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">이메일무단수집거부</a></li>
+		</ul>
+		<address>
+			회사명: 주식회사 모두플래닛   대표: 신숙희   통신판매업신고번호: 2016-화성매송-0002호  사업자등록번호 : 220-88-93872<br>
+			주소: 경기도 화성시 매송면 매송고색로 383-1   개인정보보호 관리책임자: 채수영<br>
+			전화번호: 031-294-9255   팩스: 031-8013-7990   이메일: youanmy@youanmy.com
+		</address>
+	</footer>
+</body>
+</html>
