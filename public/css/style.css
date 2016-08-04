@@ -1,6 +1,6 @@
 /* reset */
-body,html{width:100%;height:100%;}
-* {padding:0;margin:0;font-size: 14px;color:#000}
+body,html{width:100%;height:100%;color:#000;font-size: 14px;}
+* {padding:0;margin:0;}
 ul, li{list-style:none}
 a:hover,a:focus,a:link,a:visited {text-decoration:none}
 em,th{font-style:normal}
@@ -375,20 +375,25 @@ section#trip_add .btn {
 	height: 100px;
 }
 
+section#estimate_list > ul > li, 
 section#bid_list > ul > li {
 	margin-bottom: 80px;
 }
+section#estimate_list > ul > li:after, 
 section#bid_list > ul > li:after {
 	content: "";
 	clear: both;
 	display: block;	
 }
+section#estimate_list .user, 
 section#bid_list .user {
 	float: left;
 	width: 200px;
 	text-align: center;
 }
+section#estimate_list .cont, 
 section#bid_list .cont {float: left;}
+section#estimate_list .userImg, 
 section#bid_list .userImg {
 	width: 100px;
 	height: 100px;
@@ -396,6 +401,7 @@ section#bid_list .userImg {
 	background: #eee;
 	border-radius: 100px;
 }
+section#estimate_list .user span,
 section#bid_list .user span {display: block;}
 section#bid_list .state li {
 	display: inline-block;
@@ -421,7 +427,20 @@ section#bid_list .info p {
 	text-align: center;
 }
 section#bid_list .price p {width: 310px;} 
+section#estimate_list .btn, 
 section#bid_list .btn {width: 100%;} 
+
+section#estimate_list .check li {
+	display: inline;
+	margin: 0 10px;
+	color: #aaa;
+}
+section#estimate_list .check .active {
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 
 /*footer*/
 footer {
