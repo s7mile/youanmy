@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>유안마이</title>
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script>
+	$(function(){
+		$( ".datePick" ).datepicker();
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>
+				<a href="/"><span>遊 安 买</span>You&My</a>
+			</h1>
+			<ul class="globalNav">
+				<li><a href="signup.html">회원가입</a></li>
+				<li><a href="login.html">로그인</a></li>
+				<li>
+					<select name="language" id="language">
+						<option value="korean">한국어</option>
+						<option value="english">English</option>
+						<option value="china">汉语</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="mypage.html">계정설정</a></li>
+				<li><a href="myschedule.html">일정관리</a></li>
+				<li><a href="estimate_list.html">입찰관리</a></li>
+				<li><a href="trip_list.html">여행상품관리</a></li>
+				<li><a href="calculate.html">정산관리</a></li>
+				<li><a href="qna.html">질문과답변</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="myscehdule">
+		<p class="noti"><strong>유안마이</strong> 플래너님의 일정이 3개 등록되었습니다.</p>
+		<div class="datePick"></div>
+		<p class="noti">등록된 일정</p>
+		<div>
+			<h2>서울 청춘 여행</h2>
+			<ul>
+				<li>sonofsun</li>
+				<li>4명</li>
+				<li>친구끼리</li>
+			</ul>
+			<input type="text" class="datePick" placeholder="시작일">~
+			<input type="text" class="datePick" placeholder="종료일">
+		</div>
+		<div>
+			<h2>서울 청춘 여행</h2>
+			<ul>
+				<li>sonofsun</li>
+				<li>4명</li>
+				<li>친구끼리</li>
+			</ul>
+			<input type="text" class="datePick" placeholder="시작일">~
+			<input type="text" class="datePick" placeholder="종료일">
+		</div>
+		<div>
+			<h2>서울 청춘 여행</h2>
+			<ul>
+				<li>sonofsun</li>
+				<li>4명</li>
+				<li>친구끼리</li>
+			</ul>
+			<input type="text" class="datePick" placeholder="시작일">~
+			<input type="text" class="datePick" placeholder="종료일">
+		</div>
+	</section>
+	<footer>
+		<ul>
+			<li><a href="#">서비스소개</a></li>
+			<li><a href="#">고객센터</a></li>
+			<li><a href="#">제휴문의</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">이메일무단수집거부</a></li>
+		</ul>
+		<address>
+			회사명: 주식회사 모두플래닛   대표: 신숙희   통신판매업신고번호: 2016-화성매송-0002호  사업자등록번호 : 220-88-93872<br>
+			주소: 경기도 화성시 매송면 매송고색로 383-1   개인정보보호 관리책임자: 채수영<br>
+			전화번호: 031-294-9255   팩스: 031-8013-7990   이메일: youanmy@youanmy.com
+		</address>
+	</footer>
+</body>
+</html>
